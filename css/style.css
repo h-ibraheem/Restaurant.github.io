@@ -2,7 +2,7 @@
 :root {
   --main-color: #EA6D27;
   --text-main-color: #101A24;
-  --text-secondry-color: #5C6574;
+  --text-secondry-color: #101A24;
   --section-padding: 60px;
   --section-background: #eeeeee;
   --main-duration: 0.5s;
@@ -54,7 +54,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   border-radius: 15px 0;
-
+  margin-right: 25px;
 }
 
 .book-btn {
@@ -318,25 +318,27 @@ header nav .booktbl a {
 }
 
 @media (max-width:676px) {
-  .promo .container .content{
+  .promo .container .content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
   }
-  .promo .container .content h2{
+
+  .promo .container .content h2 {
     width: 100%;
     font-size: 20px;
     ;
   }
 
-  .promo .container .content p{
+  .promo .container .content p {
     width: 100%;
   }
-  .promo .container .art .image{
+
+  .promo .container .art .image {
     display: none;
   }
-  
+
   .promo .container .content h2 {
     color: #101A24;
     font-family: David Libre;
@@ -344,8 +346,9 @@ header nav .booktbl a {
     font-style: normal;
     font-weight: 7;
     line-height: 72px;
+  }
 }
-}
+
 /* End header */
 
 /* start dishes */
@@ -359,7 +362,7 @@ header nav .booktbl a {
 
 .special .container .tital {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 
 .special .container .tital h2 {
@@ -371,7 +374,7 @@ header nav .booktbl a {
 }
 
 .special .container .tital p {
-  width: 375px;
+  width: 500px;
   margin: 10px auto;
   text-align: left;
   font-size: 16px;
@@ -382,22 +385,33 @@ header nav .booktbl a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-column-gap: 20px;
-  grid-row-gap: 50px;
+  grid-row-gap: 150px;
 }
 
 .special .container .dishes .box {
-  text-align: center;
   position: relative;
+  text-align: center; 
+  border: 3px solid #fff;
+  padding: 20px 0;
+  border-radius: 20% 0;
+  width: 265px;
+  height: 309px;
+}
+.special .container .dishes .active {
+ background-color: #fff;
 }
 
-.special .container .dishes .box img {
-  height: 160px;
+.special .container .dishes .box .image {
+  position: absolute;
+  top: -100px;
+  left: 40px;
+  height: 400px;
 }
 
 .special .container .dishes .box span {
   position: absolute;
-  top: 20%;
-  right: 20%;
+  top: 10%;
+  right: -10%;
   background-color: var(--text-main-color);
   color: #FFF;
   font-size: 16px;
@@ -405,8 +419,7 @@ header nav .booktbl a {
   font-family: Inter;
   padding: 8px;
   border-radius: 60px;
-
-
+  padding: 15px;
 }
 
 .special .container .dishes .box h5 {
@@ -415,10 +428,11 @@ header nav .booktbl a {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  padding-top: 80px;
 }
 
 .special .container .dishes .box p {
-  width: 310px;
+  width: 100%;
   text-align: center;
   font-family: Inter;
   font-size: 15px;
@@ -428,6 +442,279 @@ header nav .booktbl a {
   line-height: 2;
 }
 
-
-
 /* End dishes */
+
+/* start Welcome */
+.welcome {
+  padding-top: var(--section-padding);
+  padding-bottom: calc(var(--section-padding) *2);
+  background-color: var(--section-background);
+}
+
+.welcome .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.welcome .image {
+  position: relative;
+}
+
+.welcome .image img {
+  height: 450px;
+}
+
+.welcome .image .leafs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.welcome .image .leafs img {
+  position: absolute;
+  height: 90px;
+}
+
+.welcome .image .leafs .leaf1 {
+  left: 5%;
+  bottom: 50%;
+}
+
+.welcome .image .leafs .leaf3 {
+  right: 53px;
+  top: 78px;
+}
+
+
+.welcome .image .leafs .leaf2 {
+  left: 63px;
+  bottom: 26px;
+}
+
+.welcome .container .content {
+  padding: 20px;
+
+}
+
+.welcome .container .content h2 {
+  color: #101A24;
+  font-family: David Libre;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.welcome .container .content p {
+  color: #5C6574;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 50px;
+}
+
+/* end Welcome */
+
+/* start chef */
+.chef {
+  padding-top: calc(var(--section-padding) * 1.5);
+  padding-bottom:  calc(var(--section-padding) * 2);
+}
+
+.chef .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-column-gap: 50px;
+
+}
+.chef  .svg {
+  position: absolute;
+  
+}
+.chef .container .tital {
+  padding-top: var(--section-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.chef .container .tital h2 {
+  color: #101A24;
+  font-family: David Libre;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.chef .container .tital p {
+  color: #5C6574;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.chef .content .opt {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 30px;
+}
+
+.chef .content .opt ul{
+  padding-bottom: 20px;
+}
+.chef .content .opt ul li {
+  padding: 15px 0;
+  line-height: 1.8;
+  position: relative;
+}
+
+.chef .content .opt ul li::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 25px;
+  position: absolute;
+  top: 20px;
+  left: -25px;
+  color: var(--main-color);
+
+}
+
+.chef .container .image {
+  margin:auto; 
+}
+
+/* End chef */
+
+/* Start reviews */
+
+.reviews{
+  padding-top: calc(var(--section-padding)* 1.5);
+  background-color: var(--section-background);
+  position: relative;
+ height: 100vh;
+ overflow: hidden;
+}
+
+.reviews svg{
+  position: absolute;
+}
+
+.reviews .content{
+  text-align: center;
+}
+
+.reviews .content .title h2{
+  color: #101A24;
+    font-family: David Libre;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.reviews .content .title p{
+  color: #5C6574;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 20px;
+    width: 400px;
+    margin: 0 auto 100px;
+}
+.reviews .content .review {
+  display: flex;
+  flex-basis: 50%;
+  
+}
+.reviews .content .review .box{
+  position: relative;
+  background-color: #fff;
+  padding: 15px;
+  width: 639px;
+  height: 391px;
+  margin: 0 auto;
+  border-radius: 120px 40px;
+  left: 25%;
+}
+
+.reviews .content .review .box .image{
+  position: absolute;
+  top: -50px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.reviews .content .review .box .image img{
+  border-radius: 50%;
+}
+
+.reviews .content .review .box .image .star{
+  position: relative;
+}
+
+.reviews .content .review .box .image .star ul{
+  display: flex;
+  position: absolute;
+  left: -110px;
+}
+.reviews .content .review .box .image .star i{
+  color: #FB0;
+  margin: 0 5px;  
+}
+
+.reviews .content .review .box .text{
+ width: 100%;
+ 
+ margin: 20% auto;
+}
+
+.reviews .review .box .text p{
+  color: #5C6574;
+  font-family: Inter;
+  line-height: 2;
+  margin: 0;
+}
+
+.reviews .review .box .text h4{
+  color: #101A24;
+  font-family: Inter;
+  font-size: 17px;
+  margin: 20px 0 0;
+}
+
+.reviews .dot ul{
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  transform: translateX(-50%);
+  left: 50%;
+  
+}
+
+.reviews .dot ul li{
+  width: 10px;
+    height: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.reviews .dot ul li.active{
+  background-color: var(--main-color);
+}
+/* End reviews */
+
