@@ -1,0 +1,51 @@
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+
+/* start header */
+
+
+/* start header */
+
+/* start landing */
+
+/* end landing */
+
+  }
+  
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+
+    
+/* start header */
+
+/* start header */
+
+/* start landing */
+
+/* end landing */
+  }
+  
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+
+    
+/* start header */
+
+/* start header */
+
+/* start landing */
+
+/* end landing */
+}
+
+ 

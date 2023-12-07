@@ -1,10 +1,10 @@
 /* Start Variables */
 :root {
   --main-color: #EA6D27;
-  --secondary-color: #101A24;
-  --p-color: #5C6574;
+  --text-main-color: #101A24;
+  --text-secondry-color: #5C6574;
   --section-padding: 60px;
-  --section-background: #f6f6f6;
+  --section-background: #eeeeee;
   --main-duration: 0.5s;
   --main-border: 1px solid rgba(16, 26, 36, 0.20);
 }
@@ -40,26 +40,6 @@ ul {
   list-style: none;
 }
 
-/* Small */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-/* Medium */
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-/* Large */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 
 /* End Global Rules */
 
@@ -287,11 +267,11 @@ header nav .booktbl a {
   border-radius: 60px;
 }
 
-.promo .container .art{
+.promo .container .art {
   position: relative;
-  
+
 }
- 
+
 
 .promo .container .art .vectors svg {
   height: 180px;
@@ -301,13 +281,11 @@ header nav .booktbl a {
 }
 
 .promo .container .art .vectors .svg1 {
-
   top: 0;
   left: 0;
 }
 
 .promo .container .art .vectors .svg2 {
-  
   top: 0;
   right: 0;
 }
@@ -320,14 +298,14 @@ header nav .booktbl a {
 
 .promo .container .art .image {
   position: relative;
-  margin: 20px; 
+  margin: 20px;
   height: 100%;
 }
 
 .promo .container .art .image .main-dish {
   position: absolute;
   height: 500px;
-  border-radius: 80px 10px; 
+  border-radius: 80px 10px;
   left: 15%;
   top: 5%;
 }
@@ -339,6 +317,117 @@ header nav .booktbl a {
   height: 300px;
 }
 
+@media (max-width:676px) {
+  .promo .container .content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .promo .container .content h2{
+    width: 100%;
+    font-size: 20px;
+    ;
+  }
 
-
+  .promo .container .content p{
+    width: 100%;
+  }
+  .promo .container .art .image{
+    display: none;
+  }
+  
+  .promo .container .content h2 {
+    color: #101A24;
+    font-family: David Libre;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 7;
+    line-height: 72px;
+}
+}
 /* End header */
+
+/* start dishes */
+.special {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+
+  position: relative;
+}
+
+.special .container .tital {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.special .container .tital h2 {
+  font-family: Daivd Libre;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--text-main-color);
+}
+
+.special .container .tital p {
+  width: 375px;
+  margin: 10px auto;
+  text-align: left;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.special .container .dishes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+}
+
+.special .container .dishes .box {
+  text-align: center;
+  position: relative;
+}
+
+.special .container .dishes .box img {
+  height: 160px;
+}
+
+.special .container .dishes .box span {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  background-color: var(--text-main-color);
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-family: Inter;
+  padding: 8px;
+  border-radius: 60px;
+
+
+}
+
+.special .container .dishes .box h5 {
+  color: var(--text-main-color);
+  font-family: David Libre;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.special .container .dishes .box p {
+  width: 310px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+
+
+/* End dishes */
