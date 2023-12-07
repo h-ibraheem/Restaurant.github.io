@@ -64,7 +64,7 @@ ul {
 /* End Global Rules */
 
 /* start component */
-.menu-btn { 
+.menu-btn {
   background-color: black;
   color: #FFF;
   text-align: center;
@@ -74,7 +74,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   border-radius: 15px 0;
-  
+
 }
 
 .book-btn {
@@ -196,12 +196,11 @@ header nav .booktbl a {
 }
 
 /* end header */
-/* Start header */
+/* Start landing */
 .landing {
   position: relative;
   height: 100vh;
   z-index: -1;
-  overflow: hidden;
 }
 
 .landing .crcl {
@@ -222,48 +221,21 @@ header nav .booktbl a {
 }
 
 .landing .crcl .div1 {
-  top: -500px;
-  left: -500px;
+  top: -580px;
+  left: -530px;
 
 }
 
 .landing .crcl .div2 {
-  top: -641px;
-  left: -604px;
+  top: -512px;
+  left: -582px;
 }
 
 .landing .crcl .div3 {
-  top: -428px;
-  left: -450px;
+  top: -498px;
+  left: -520px;
 }
 
-.landing .vectors {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: calc(100vh - 25%);
-  padding: 30px;
-  opacity: 15%;
-}
-
-.landing .vectors svg {
-  position: absolute;
-  width: 448px;
-  height: 191.942px;
-
-}
-
-.landing .vectors .svg2 {
-  top: 0;
-  right: 0;
-}
-
-
-.landing .vectors .svg3 {
-  bottom: 0;
-  right: 0;
-}
 
 .promo {
   position: absolute;
@@ -272,7 +244,7 @@ header nav .booktbl a {
 }
 
 .promo .container {
-  
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   grid-column-gap: 40px;
@@ -302,38 +274,71 @@ header nav .booktbl a {
 
 }
 
-.promo .container .content .links{
+.promo .container .content .links {
   margin: 80px 0;
 
 }
 
-.promo .container .content .social i{
+.promo .container .content .social i {
   font-size: 20px;
   border: 1px solid black;
   padding: 10px 13px;
   margin-right: 15px;
   border-radius: 60px;
 }
-.promo .container .image{
-  margin: 10px;
- position: relative;
-}
 
-.promo .container .image img{
+.promo .container .art{
+  position: relative;
+  
+}
+ 
+
+.promo .container .art .vectors svg {
+  height: 180px;
+  opacity: 30%;
+  z-index: -1;
   position: absolute;
-
 }
 
-.min-dish{
-position: absolute;
-bottom: 200px;
-left: -150px;
-height: 300px;
+.promo .container .art .vectors .svg1 {
+
+  top: 0;
+  left: 0;
 }
 
-.main-dish{
-height: 500px;
-border-radius: 80px 10px;
+.promo .container .art .vectors .svg2 {
+  
+  top: 0;
+  right: 0;
 }
+
+
+.promo .container .art .vectors .svg3 {
+  bottom: 125px;
+  right: -9px;
+}
+
+.promo .container .art .image {
+  position: relative;
+  margin: 20px; 
+  height: 100%;
+}
+
+.promo .container .art .image .main-dish {
+  position: absolute;
+  height: 500px;
+  border-radius: 80px 10px; 
+  left: 15%;
+  top: 5%;
+}
+
+.promo .container .art .image .side-dish {
+  position: absolute;
+  bottom: 117px;
+  left: -113px;
+  height: 300px;
+}
+
+
 
 /* End header */
