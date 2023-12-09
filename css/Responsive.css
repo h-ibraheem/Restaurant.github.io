@@ -1,51 +1,425 @@
-
 /* Small */
 @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-
-/* start header */
-
-
-/* start header */
-
-/* start landing */
-
-/* end landing */
-
+  .container {
+    width: 750px;
   }
-  
-  /* Medium */
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
 
-    
-/* start header */
-
-/* start header */
-
-/* start landing */
-
-/* end landing */
+  header nav .toggle-menu {
+    display: none;
   }
-  
-  /* Large */
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
 
-    
-/* start header */
+}
+@media (max-width:768px) {
 
-/* start header */
-
-/* start landing */
-
-/* end landing */
 }
 
+@media (max-width:769px) {
+
+
+   header nav ul {
+    display: none;
+
+  }
  
+
+  header .container .booktbl a {
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+
+  header .container nav .toggle-menu:hover+ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0 0 0 /40%);
+    text-align: center;
+
+  }
+
+  header nav ul li {
+    padding: 20px !important;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-size: 18px;
+  }
+
+.landing{
+  height: 70vh;
+  margin-top: 100px;
+}
+  
+.landing .crcl .div1,
+.landing .crcl .div2,
+.landing .crcl .div3 {
+  position: absolute;
+  width: 960px;
+  height: 960px;
+  border: var(--main-border);
+  flex-shrink: 0;
+  border-radius: 960px;
+}
+
+.landing .crcl .div1 {
+  top: -818px;
+  left: -805px;
+
+}
+
+.landing .crcl .div2 {
+  top: -851px;
+  left: -770px;
+}
+
+.landing .crcl .div3 {
+  top: -783px;
+  left: -739px;
+}
+ 
+.landing  .container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: auto;
+  text-align: center;
+}
+
+.landing  .container .content{
+  order: 2;
+}
+
+
+.landing   .container .content h2 {
+  margin: 0 5px 15px 0;
+  font-size: 25px;
+}
+
+.landing  .container .content p{
+  font-size: 15px;
+  margin: 15px auto  ;
+  width: 300px;
+}
+
+.landing   .container .content .links {
+  margin: 40px 0;
+
+}
+
+.landing .social i {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px 13px;
+  margin-right: 15px;
+  border-radius: 60px;
+}
+
+
+.landing  .container .art {
+  order: 1;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.landing  .container .art .vectors{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+ 
+
+.landing  .container .art .vectors svg {
+  height: 130px;
+  opacity: 30%;
+  z-index: -1;
+  position: absolute;
+}
+
+.landing  .container .art .vectors .svg2 {
+  top: -30px;
+  right: 50px;
+}
+ 
+
+.landing  .container .art .vectors .svg3 {
+  bottom: 85px;
+  right: 50px;
+}
+
+.landing  .container .art .image {
+  position: relative;
+  margin: 20px;
+  height: 90%;
+ 
+}
+
+.landing  .container .art .image .main-dish {
+  position: absolute;
+  height: 300px;
+  border-radius: 80px 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+}
+
+
+.landing  .container .art .image .side-dish {
+  position: absolute;
+  bottom: 50px;
+  left: 7px;
+  height: 150px;
+}
+
+.landing .crcl{
+  z-index: -1;
+}
+
+
+
+.special{
+  margin-top: 100px;
+  padding: 20px;
+}
+
+
+.special .container .tital h2  {
+  font-size: 40px;
+ 
+}
+
+.special .container .tital p  {
+  font-size: 18px;
+  width: 100%;
+ 
+}
+
+.special .container .dishes .box {
+  margin: 0 auto;
+}
+
+
+.special .container .dishes .box p {
+  width: 100%;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.welcome .container{
+  text-align: center;
+}
+
+.welcome .container .content h2{
+  font-size: 40px;
+}
+
+.welcome .container .content p{
+  width: 400px;
+   
+}
+
+.welcome .image img {
+  height: 350px;
+}
+
+.welcome .image .leafs img {
+  height: 90px;
+}
+
+
+.welcome .image .leafs .leaf1 {
+  left: 80px;
+  bottom: 50%;
+}
+
+.welcome .image .leafs .leaf3 {
+  right: 53px;
+  top: 78px;
+}
+
+
+.welcome .image .leafs .leaf2 {
+  left: 180px;
+  bottom: 10px;
+}
+
+.chef .svg{
+  z-index: -1;
+
+}
+.chef .container{
+  text-align: center;
+  
+}
+.chef .container .content{
+  order: 2;
+  
+}
+
+.chef .container .tital h2{
+  font-size: 40px;
+}
+
+.chef .container .tital p{
+  width: 400px;
+}
+.chef .content .opt {
+  grid-template-columns: auto auto;
+  padding: 10px;
+  text-align: left;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.chef .container .image img{
+ height: 450px;
+}
+
+.reviews svg{
+  opacity: 0.3;
+}
+
+
+.reviews .content .title h2{
+  font-size:40px ;
+}
+
+.reviews .content .title p{
+  font-size: 14px;
+}
+
+.reviews .content .review{
+  display: flex;
+  flex-direction: column;
+  
+}
+ 
+.reviews .content .review .box {
+  margin: 30px auto;
+  left: 20px;
+  width: 300px;
+ border-radius: 120px 40px;
+  
+}
+
+.reviews .dot ul{
+  display: block;
+  left: 10px;
+  top: 50%;
+
+}
+
+.reviews .dot ul li{
+  margin: 15px 0;
+}
+
+ .reviews .review .box .text p{
+   line-height: 1.5;
+   padding-top : 20px;
+    
+ }
+
+ .subscrib .container{
+  height: 100%;
+  width: 100%;
+ }
+ .subscrib .container .image{
+  width: 90%;
+  left: 5%;
+}
+
+
+.subscrib .content h3{
+  font-size: 35px;
+}
+
+.subscrib .content  form{
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+Footer{
+  height: auto;
+  padding-top: 50px;
+}
+
+Footer .footer .info{
+  grid-area: info;
+}
+Footer .footer{
+  display: grid;
+  grid-template-areas: 'info info ';
+  grid-gap: 10px;  
+  grid-row-gap: 10px;
+  
+}
+
+Footer .container .info .diuty{
+  text-align: center;
+
+}
+
+Footer .container .info .diuty h5{
+  margin-bottom: 10px;
+}
+
+Footer .container .info .diuty p{
+  margin: 5px auto;
+}
+
+Footer .container h4{
+  margin: 40px 40px 0 ;
+}
+
+Footer .container .info img,
+Footer .container .info .p-formate{
+  margin-left: 10px;
+}
+
+
+Footer .social i {
+  font-size: 20px;
+  border: 1px solid #051633;
+  padding: 10px 13px;
+  margin: 20px 10px;
+  border-radius: 60px;
+}
+
+Footer .container .navig,
+Footer .container .dishes,
+Footer .container .social{
+ margin-left: auto;
+}
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+
+}

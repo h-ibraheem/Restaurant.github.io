@@ -45,16 +45,16 @@ ul {
 
 /* start component */
   .menu-btn {
-  background-color: black;
-  color: #FFF;
-  text-align: center;
-  font-family: David Libre;
-  font-size: 15px;
-  padding: 15px 30px;
-  font-style: normal;
-  font-weight: 500;
-  border-radius: 15px 0;
-  margin-right: 25px;
+    background-color: black;
+    color: #FFF;
+    text-align: center;
+    font-family: David Libre;
+    font-size: 15px;
+    padding: 15px 30px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 15px 0;
+    margin-right: 25px;
 }
 
 .book-btn {
@@ -85,16 +85,10 @@ ul {
 /* start header */
 header {
   padding: 20px;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-
 }
 
 header .container {
-  position: relative;
   display: flex;
-  min-height: 50px;
   justify-content: space-between;
   align-items: center;
 }
@@ -106,7 +100,6 @@ header .container .logo img {
 header nav {
   display: flex;
   align-items: center;
-
 }
 
 header nav .toggle-menu {
@@ -139,63 +132,19 @@ header nav .booktbl a {
   color: white;
   border-radius: 15px 0;
 }
-
-
-
-@media (min-width:767px) {
-  header nav .toggle-menu {
-    display: none;
-  }
-}
-
-@media (max-width:767px) {
-
-
-  header nav ul {
-    display: none;
-
-  }
-
-  header .container .booktbl a {
-    padding: 10px;
-    font-size: 14px;
-    margin-left: 30px;
-  }
-
-  header .container nav .toggle-menu:hover+ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgb(0 0 0 /40%);
-    text-align: center;
-
-  }
-
-  header nav ul li {
-    padding: 20px !important;
-  }
-
-  header nav ul li a {
-    color: white;
-    font-size: 18px;
-  }
-}
-
+ 
 /* end header */
+
 /* Start landing */
 .landing {
   position: relative;
-  height: 100vh;
-  z-index: -1;
+  /* margin-top: 150px; */
+  /* padding-bottom: 100px; */
 }
 
 .landing .crcl {
   display: flex;
-  position: relative;
-
+  position: absolute;
 }
 
 .landing .crcl .div1,
@@ -210,65 +159,50 @@ header nav .booktbl a {
 }
 
 .landing .crcl .div1 {
-  top: -580px;
-  left: -530px;
+  top: -818px;
+    left: -805px;
 
 }
 
 .landing .crcl .div2 {
-  top: -512px;
-  left: -582px;
+  top: -851px;
+    left: -770px;
 }
 
 .landing .crcl .div3 {
-  top: -498px;
-  left: -520px;
+  top: -783px;
+  left: -739px;
 }
 
-
-.promo {
-  position: absolute;
-  top: 200px;
-  width: 100%;
-}
-
-.promo .container {
-  position: relative;
+.landing .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   grid-column-gap: 40px;
 }
+ 
 
-.promo .content h4 {
-  text-transform: uppercase;
-
-}
-
-.promo .container .content h2 {
+.landing  .container .content h2 {
   color: #101A24;
-
   font-family: David Libre;
-  font-size: 70px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
-  line-height: 72px;
 }
 
-.promo .container .content p {
+.landing  .container .content p {
   color: #5C6574;
   font-weight: 400;
   line-height: 2;
-  width: 376px;
-  height: 115px;
+  width: 90%; 
 
 }
 
-.promo .container .content .links {
+.landing   .container .content .links {
   margin: 80px 0;
 
 }
 
- .social i {
+.landing .social i {
   font-size: 20px;
   border: 1px solid black;
   padding: 10px 13px;
@@ -276,42 +210,40 @@ header nav .booktbl a {
   border-radius: 60px;
 }
 
-.promo .container .art {
+.landing   .container .art {
   position: relative;
-
 }
-
-
-.promo .container .art .vectors svg {
+ 
+.landing  .container .art .vectors svg {
   height: 180px;
   opacity: 30%;
   z-index: -1;
   position: absolute;
 }
 
-.promo .container .art .vectors .svg1 {
+.landing  .container .art .vectors .svg1 {
   top: 0;
   left: 0;
 }
 
-.promo .container .art .vectors .svg2 {
+.landing  .container .art .vectors .svg2 {
   top: 0;
   right: 0;
 }
 
 
-.promo .container .art .vectors .svg3 {
+.landing  .container .art .vectors .svg3 {
   bottom: 125px;
   right: -9px;
 }
 
-.promo .container .art .image {
+.landing  .container .art .image {
   position: relative;
   margin: 20px;
-  height: 100%;
+ height: 100%;
 }
 
-.promo .container .art .image .main-dish {
+.landing  .container .art .image .main-dish {
   position: absolute;
   height: 500px;
   border-radius: 80px 10px;
@@ -319,54 +251,20 @@ header nav .booktbl a {
   top: 5%;
 }
 
-.promo .container .art .image .side-dish {
+.landing  .container .art .image .side-dish {
   position: absolute;
   bottom: 117px;
   left: -113px;
   height: 300px;
 }
 
-@media (max-width:676px) {
-  .promo .container .content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .promo .container .content h2 {
-    width: 100%;
-    font-size: 20px;
-    ;
-  }
-
-  .promo .container .content p {
-    width: 100%;
-  }
-
-  .promo .container .art .image {
-    display: none;
-  }
-
-  .promo .container .content h2 {
-    color: #101A24;
-    font-family: David Libre;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 7;
-    line-height: 72px;
-  }
-}
-
 /* End header */
 
 /* start dishes */
 .special {
-  padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding);
   background-color: var(--section-background);
-
-  position: relative;
 }
 
 .special .container .tital {
@@ -395,6 +293,7 @@ header nav .booktbl a {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-column-gap: 20px;
   grid-row-gap: 150px;
+  align-items: ;
 }
 
 .special .container .dishes .box {
@@ -541,7 +440,7 @@ header nav .booktbl a {
   grid-column-gap: 50px;
 
 }
-.chef  .svg {
+.chef .svg {
   position: absolute;
   
 }
@@ -609,7 +508,6 @@ header nav .booktbl a {
 
 .reviews{
   padding-top: calc(var(--section-padding)* 1.5);
-   
   background-color: var(--section-background);
   position: relative;
  height: 100vh;
@@ -629,8 +527,7 @@ header nav .booktbl a {
     font-family: David Libre;
     font-size: 60px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 65px;
+    font-weight: 700; 
 }
 
 .reviews .content .title p{
@@ -687,7 +584,6 @@ header nav .booktbl a {
 
 .reviews .content .review .box .text{
  width: 100%;
- 
  margin: 20% auto;
 }
 
@@ -729,12 +625,15 @@ header nav .booktbl a {
 /* End reviews */
 
 /* start subscrib */
-.subscrib{
-  position: relative;
+.subscrib{ 
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   background-color: var(--section-background);
   height: 250px;
+}
+
+.subscrib .container{
+  position: relative;
 }
 
 .subscrib .container .image{
@@ -761,7 +660,7 @@ header nav .booktbl a {
   font-size: 50px;
   font-style: normal;
   font-weight: 500;
-  line-height: 58px; /* 116% */
+  line-height: 1.5; /* 116% */
 }
 
 .subscrib .content  form{
@@ -861,7 +760,7 @@ Footer svg{
   Footer .container ul li a,
   .right p,
   .right .link a{
-    color: #5C6574;
+    color: #051633;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -871,6 +770,16 @@ Footer svg{
   Footer .social h4{
     margin-bottom: 25px;
   }
+
+  
+Footer .social i {
+  font-size: 20px;
+  border: 1px solid #051633;
+  padding: 10px 13px;
+  margin-right: 15px;
+  border-radius: 60px;
+}
+
   Footer .right{
     position: relative; 
     width: 100%;
